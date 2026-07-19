@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Video, Globe, Share2 } from 'lucide-react';
+import { Video, Globe, Share2 } from 'lucide-react';
 
 interface HeaderProps {
   activeSection?: string;
