@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-black text-white antialiased selection:bg-white selection:text-black;
+    font-family: 'Wix Madefor Text', 'Helvetica Neue', Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Wix Madefor Display', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* Custom subtle scrollbar matching high-end Wix template */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-black;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-800 rounded-full hover:bg-zinc-600 transition-colors;
+  }
+}
