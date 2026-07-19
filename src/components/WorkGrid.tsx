@@ -42,7 +42,7 @@ export const WorkGrid: React.FC<WorkGridProps> = ({ videos, onSelectVideo }) => 
             artist: 'Being Strong (Salman Khan Brand)',
             songTitle: 'Gladiator Training',
             duration: '00:57',
-            coverUrl: '/being_strong_banner.png',
+            coverUrl: 'being_strong_banner.png',
             genre: 'Promotional & Social Reel'
           })}
           className={`group relative w-full aspect-[16/9] md:aspect-[21/9] bg-blue-900/40 mb-16 overflow-hidden cursor-pointer border border-zinc-800 shadow-2xl transition-all duration-1000 ease-out ${
@@ -50,7 +50,7 @@ export const WorkGrid: React.FC<WorkGridProps> = ({ videos, onSelectVideo }) => 
           }`}
         >
           <img
-            src={videos[0]?.coverUrl || "/being_strong_banner.png"}
+            src={videos[0]?.coverUrl || "being_strong_banner.png"}
             alt={videos[0]?.title || "Being Strong - Train like a Gladiator"}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 brightness-90 group-hover:brightness-100"
           />

@@ -20,7 +20,7 @@ export const WIX_VIDEOS: VideoItem[] = [
     artist: 'Being Strong (Salman Khan Brand)',
     songTitle: 'Gladiator Training',
     duration: '00:57',
-    coverUrl: '/being_strong_banner.png',
+    coverUrl: 'being_strong_banner.png',
     videoUrl: 'https://www.youtube.com/watch?v=M1tSZkLFcG8',
     description: 'Dynamic promotional campaign for premium Being Strong fitness equipment with custom transitions and impact cuts.',
     genre: 'Promotional & Social Reel',

@@ -49,7 +49,7 @@ export const About: React.FC = () => {
           >
             <div className="w-64 sm:w-72 md:w-80 aspect-[3/4.2] shadow-2xl overflow-hidden border border-zinc-800/80 transform translate-y-12 lg:translate-y-24 bg-zinc-900 z-20 hover:shadow-[0_0_50px_rgba(255,255,255,0.15)] transition-all">
               <img
-                src="/darsh_portrait.png"
+                src="darsh_portrait.png"
                 alt="Darsh Shah Portrait"
                 className="w-full h-full object-cover filter brightness-95 hover:scale-105 transition-transform duration-700"
               />
