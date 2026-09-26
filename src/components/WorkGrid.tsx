@@ -85,6 +85,14 @@ export const WorkGrid: React.FC<WorkGridProps> = ({ videos, onSelectVideo }) => 
                   <img
                     src={video.coverUrl}
                     alt={video.title}
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (target.src.includes('maxresdefault.jpg')) {
+                        target.src = target.src.replace('maxresdefault.jpg', 'hqdefault.jpg');
+                      } else if (target.src.includes('hqdefault.jpg')) {
+                        target.src = target.src.replace('hqdefault.jpg', 'mqdefault.jpg');
+                      }
+                    }}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out brightness-90 group-hover:brightness-100"
                   />
                   <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
